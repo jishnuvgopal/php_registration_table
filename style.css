@@ -1,0 +1,202 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: linear-gradient(90deg, #3e37b8 0%, #4545d4 35%, #00d4ff 100%);
+    
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container{
+   
+    
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.container .heading::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 3px;
+width: 250px;
+background-image: linear-gradient(to right top, #b64987, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+background-image: linear-gradient(90deg, #3e37b8 0%, #4545d4 35%, #00d4ff 100%);
+}
+
+#login{
+    float: right;
+    margin-top: -60px;
+    margin-right: 10px;
+}
+#login button{
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #94a2df);
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+#login button:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+form .user-details .input-box{
+  margin-bottom: 5px;
+  width: calc(100%);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 90%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+#country{
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  border-color: #706adf;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.dob{
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  border-color: #706adf;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+#country,
+.dob{
+  border-color: #706adf;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+   font-size: 15px;
+   font-weight: 800;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.5s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #4545d4 35%;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 25px;
+   margin: 15px 0
+   
+ }
+ form .button input{
+    
+   height: 50px;
+   width: 200px;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all .5s ease;
+   background: linear-gradient(135deg, #71b7e6, #94a2df);
+ }
+ form .button input:hover{
+  transform: scale(1.1);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+/* @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+  align-items: center;
+}
+form .user-details .input-box{
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+    
+  }
+  .user-details::-webkit-scrollbar-track{
+    width: 5px;
+  }
+  }
+  @media(max-width: 480px){
+  .container .content .category{
+    flex-direction: column;
+   
+  }
+}
+*/
+
+
+
